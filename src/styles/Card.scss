@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $bg-accent;
+    padding: 1rem;
+    width: 13rem;
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+
+    &__logo{
+        width: 4rem;
+        border-radius: 1rem;
+        margin-right: .7rem;
+        transition: all 500ms;
+    }
+
+    &__title{
+        margin: 0;
+        transition: all 500ms;
+    }
+
+    &__arrow{
+        font-size: 1.3rem;
+        position: absolute;
+        left: 50%;
+        bottom: .15rem;
+        transform: rotate(90deg);
+        transition: all 500ms;
+    }
+
+    &:hover{
+        .card{
+            &__logo{
+                transform: scale(1.1);
+            }
+
+            &__title{
+                transform: translateX(0.5rem) scale(1.1);
+            }
+
+            &__arrow{
+                color: $skyblue;
+            }
+        }
+
+    }
+}

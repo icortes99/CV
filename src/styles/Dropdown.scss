@@ -1,0 +1,99 @@
+@import './variables.scss';
+
+.dropdown{
+    position: absolute;
+    top: 7rem;
+    z-index: 3;
+    width: 20rem;
+    transform: translateX(-45%);
+    background-color: $bg;
+    border: $border;
+    border-radius: $border-radius;
+    padding: 1rem;
+    overflow: hidden;
+    transition: height $speed ease;
+
+    &__menu{
+        &-enter{
+            position: absolute;
+            transform: translateX(-110%);
+        }
+
+        &-enter-active{
+            transform: translateX(0%);
+            transition: all $speed ease;
+        }
+
+        &-exit{
+            position: absolute;
+        }
+
+        &-exit-active{
+            transform: translateX(-110%);
+            transition: all $speed ease;
+        }
+
+        &--secondary{
+            &-enter{
+                position: absolute;
+                transform: translateX(-110%);
+            }
+    
+            &-enter-active{
+                transform: translateX(0%);
+                transition: all $speed ease;
+            }
+    
+            &-exit{
+                position: absolute;
+            }
+    
+            &-exit-active{
+                transform: translateX(-110%);
+                transition: all $speed ease;
+            }
+        }
+    }
+
+    &__container{
+        width: 100%;
+    }
+}
+
+.item{
+    height: 3rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: $border-radius;
+    transition: background $speed;
+    padding: 0.5rem;
+    justify-content: space-between;
+
+    &:hover{
+        background-color: #727272;
+    }
+
+    &__left{
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: #727272;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: .6rem;
+    }
+
+    &__right{
+        height: 2.5rem;
+        width: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+}

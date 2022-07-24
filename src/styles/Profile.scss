@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+.profile{
+    display: flex;
+    width: calc(100% - 4rem);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    &__container{
+        max-width: 50%;
+        padding: 0 1rem;
+    }
+
+    &__image{
+        width: 90%;
+        border-radius: 50%;
+        max-width: 20rem;
+    }
+
+    &__name{
+        color: white;
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &__container{
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            transition: all 500ms;
+        }
+
+        &__icon{
+            font-size: 1.5rem;
+            margin-right: .4rem;
+        }
+    }
+}
+
+.click{
+    &:hover{
+        text-decoration: underline;
+    }
+}
