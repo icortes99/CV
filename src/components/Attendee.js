@@ -1,8 +1,8 @@
 import { IoIosArrowForward } from 'react-icons/io'
-import '../styles/Attandee.scss'
+import '../styles/Attendee.scss'
 
-function Attandee(){
-    const block = 'attandee'
+function Attendee(){
+    const block = 'attendee'
 
     return(
         <nav className={`${block}`}>
@@ -20,4 +20,4 @@ function Attandee(){
     )
 }
 
-export default Attandee
+export default Attendee

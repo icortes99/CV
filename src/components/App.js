@@ -1,17 +1,20 @@
-import '../styles/App.scss'
-import Attandee from './Attendee'
+import Attendee from './Attendee'
 import Education from './Education'
 import Profile from './Profile'
 import Skills from './Skills'
 import WorkExp from './WorkExp'
 import Footer from './Footer'
+import '../styles/App.scss'
 
 function App() {
   const block = 'app'
 
   return (
     <div className={`${block}`}>
-      <Attandee/>
+      <header>
+        <Attendee/>
+      </header>
+      
       <main>
         <Profile/>
         <WorkExp/>

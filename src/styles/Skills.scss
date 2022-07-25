@@ -33,8 +33,18 @@
         justify-content: center;
         color: white;
         cursor: pointer;
+        position: relative;
 
-        &__arrow{}
+        &__arrow{
+            transition: all 350ms;
+            margin-left: .2rem;
+
+            &--opened{
+                margin-left: .2rem;
+                transform: rotate(90deg);
+                transition: all 350ms;
+            }
+        }
     }
 
     &__span{

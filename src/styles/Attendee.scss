@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-/*.attandee{
+/*.attendee{
     position: fixed;
     right: 0;
     top: 0;
@@ -22,7 +22,7 @@
     }
 }*/
 
-.attandee{
+.attendee{
     position: fixed;
     right: 0;
     top: 0;
@@ -58,7 +58,7 @@
             transition: all 500ms;
         }
 
-        &:hover{
+        &:hover, &:focus{
             transform: scale(1.1);
         }
     }

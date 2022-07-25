@@ -9,18 +9,21 @@ function WorkExp(){
         company: 'Konrad Group',
         logo: 'https://res.cloudinary.com/dhe2iy0sa/image/upload/v1658538890/konradLogo_njaw8t.jpg',
         jobTitle: 'Immersive Program Trainee',
+        previewJob: 'Web dev student',
         description: 'Web dev full stack student, using primarly React.js and Express.js',
         duration: '3 months'
     }, {
         company: 'Align Tech',
         logo: 'https://res.cloudinary.com/dhe2iy0sa/image/upload/v1658538883/alignLogo_byrwou.png',
         jobTitle: 'IPP Protocol Inspector',
+        previewJob: 'Quality Inspector',
         description: 'Guarantee the quality of the automated product. Reviewing the worldwide Align coders work',
         duration: '7 months'
     }, {
         company: 'Align Tech',
         logo: 'https://res.cloudinary.com/dhe2iy0sa/image/upload/v1658538883/alignLogo_byrwou.png',
         jobTitle: 'IPP Clinical Coder',
+        previewJob: 'Clinical Coder',
         description: 'Convert clinical preferences into software language, and negotiating with the doctor when there´s something not automatable yet',
         duration: '1.5 years'
     }]

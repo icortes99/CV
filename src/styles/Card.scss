@@ -5,12 +5,13 @@
     align-items: center;
     justify-content: flex-start;
     background-color: $bg-accent;
-    padding: 1rem;
-    width: 13rem;
+    padding: 1rem 1.6rem 1rem 1rem;
+    width: auto; //14.1rem;
     border-radius: 1rem;
     position: relative;
     cursor: pointer;
     z-index: 0;
+    margin: 0 .5rem .5rem;
 
     &__logo{
         width: 4rem;
@@ -33,7 +34,7 @@
         transition: all 500ms;
     }
 
-    &:hover{
+    &:hover, &:focus{
         .card{
             &__logo{
                 transform: scale(1.1);

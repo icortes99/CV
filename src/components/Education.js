@@ -18,7 +18,7 @@ function Education(){
         logo: 'https://res.cloudinary.com/dhe2iy0sa/image/upload/v1658553842/cetavLogo_gz8qa8.png',
         career: '3D animation',
         description: 'Learn a whole pipeline to an animated video, but also assertive communication, design thinking and english',
-        duration: 'Since 2018 to 2019'
+        duration: 'From 2018 to 2019'
     }]
     const [modal, setModal] = useState(false)
 

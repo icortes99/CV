@@ -14,15 +14,17 @@ function InfoModal(props){
                         <MdClose/>
                     </button>
                     {
-                        type === 0 ? <div className={`${block}__container--0`}>
-                            <div className={`${block}__container__header`}>
+                        type === 0 ? <div>
+                            <div className={`${block}__container__header ${block}__container__header__work`}>
                                 <img src={info.logo} alt={`${info.company} logo`} className={`${block}__container__logo`}/>
                                 <h2 className={`${block}__container__title`}>{info.company}</h2>
                             </div>
-                            <p>{info.jobTitle}</p>
-                            <p>{info.duration}</p>
-                            <p>{info.description}</p>
-                        </div> : <div className={`${block}__container--1`}>
+                            <div className={`${block}__container--0`}>
+                                <p><span>Job title: </span>{info.jobTitle}</p>
+                                <p><span>During: </span>{info.duration}</p>
+                                <p><span>Description: </span>{info.description}</p>
+                            </div>
+                        </div> : <div>
                             <div className={`${block}__container__header`}>
                                 <img src={info.logo} alt={`${info.center} logo`} className={`${block}__container__logo`}/>
                                 <div className={`${block}__container__title-container`}>
@@ -30,9 +32,11 @@ function InfoModal(props){
                                     <p className={`${block}__container__subtitle`}>{info.subInfo}</p>
                                 </div>
                             </div>
-                            <p>{info.career}</p>
-                            <p>{info.duration}</p>
-                            <p>{info.description}</p>
+                            <div className={`${block}__container--1`}>
+                                <p><span>Career: </span>{info.career}</p>
+                                <p><span>During: </span>{info.duration}</p>
+                                <p><span>Description: </span>{info.description}</p>
+                            </div>
                         </div>
                     }
                 </div>

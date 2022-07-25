@@ -8,7 +8,7 @@ function Card(props){
     return(
         <div tabIndex={0} className={`${block}`} onClick={()=>setState(obj)}>
             <img className={`${block}__logo`} src={obj.logo} alt='logo'/>
-            <h3 className={`${block}__title`}>{type === 0 ? obj.company : obj.center}</h3>
+            <h3 className={`${block}__title`}>{type === 0 ? obj.previewJob : obj.center}</h3>
             <IoIosArrowForward className={`${block}__arrow`}/>
         </div>
     )
