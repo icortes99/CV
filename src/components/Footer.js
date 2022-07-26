@@ -25,8 +25,9 @@ function Footer(){
                     <h2>About this project</h2>
                     <p>
                         This project is built using React.js, Sass and CSS transitions. About companies logos, 
-                        I used them to represent the company, I do not prettend to violate any copyright. Please if
+                        I used them to represent the company, I do not pretend to violate any copyright. Please if
                         you are an employee or legal representative of any of these companies, contact me to delete it if that's the case.
+                        In addition, this page is completely accessible and full responsive.
                     </p>
                 </div>
             </div>

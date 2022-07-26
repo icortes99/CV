@@ -34,16 +34,21 @@
         color: white;
         cursor: pointer;
         position: relative;
+        transition: color 350ms;
 
         &__arrow{
-            transition: all 350ms;
+            transition: transform 350ms;
             margin-left: .2rem;
 
             &--opened{
                 margin-left: .2rem;
                 transform: rotate(90deg);
-                transition: all 350ms;
+                transition: transform 350ms;
             }
+        }
+
+        &:hover, &:focus{
+            color: skyblue;
         }
     }
 
@@ -51,5 +56,19 @@
         background-color: #474a4d;
         height: 2.3rem;
         width: .01rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .skills{
+        &__container{
+            flex-direction: column;
+            width: 20rem;
+        }
+
+        &__span{
+            height: 0.05rem;
+            width: 18rem;
+        }
     }
 }

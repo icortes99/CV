@@ -27,19 +27,19 @@ function Profile(){
                     <li>
                         <a href='mailto:cortes.ivan353@gmail.com' className={`${block}__list__container click`}>
                             <CgMail className={`${block}__list__icon`}/>
-                            <p>Email</p>
+                            <p>cortes.ivan353@gmail</p>
                         </a>
                     </li>
                     <li>
                         <a target='__blank' href='https://www.linkedin.com/in/iv%C3%A1n-cort%C3%A9s-90487218a' className={`${block}__list__container click`}>
                             <FiLinkedin className={`${block}__list__icon`}/>
-                            <p>Linked in</p>
+                            <p>Iván Cortés</p>
                         </a>
                     </li>
                     <li>
                         <a href='tel:+50672768391' className={`${block}__list__container click`}>
                             <MdOutlineAddIcCall className={`${block}__list__icon`}/>
-                            <p>Number</p>
+                            <p>+506 72768391</p>
                         </a>
                     </li>
                 </ul>

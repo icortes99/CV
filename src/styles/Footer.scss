@@ -35,3 +35,21 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .footer{
+        &__container{
+            flex-direction: column;
+
+            &__text{
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
+
+            &__icons{
+                flex-direction: row;
+            }
+        }
+    }
+}

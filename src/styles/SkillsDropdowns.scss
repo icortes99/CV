@@ -1,6 +1,12 @@
 @import './variables.scss';
 
+.un-mount{
+    z-index: 900;
+    transition: all 500ms;
+}
+
 .skillsDropds{
+    transition: height $speed ease;
     position: absolute;
     z-index: 3;
     background-color: $dropd-bg;
@@ -9,8 +15,8 @@
     max-width: 11rem;
     padding: 0.5rem 0 .5rem;
     overflow: hidden;
-    transition: height $speed ease;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
 
     &__css-container{
         &-enter{

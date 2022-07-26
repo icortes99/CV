@@ -4,13 +4,13 @@ import '../styles/InfoModal.scss'
 function InfoModal(props){
     const {info = false, setInfo, type} = props
     const block = 'infomodal'
-
+//line 10: info !== false ?, line 44: : <></>
     return(
         <>{
-            info !== false ?
-            <div className={`${block}`}>
+            
+            <div className={info !== false ? `${block}` : `${block}--hidden`}>
                 <div className={`${block}__container`}>
-                    <button onClick={()=>setInfo(false)} className={`${block}__container__close`}>
+                    <button tabIndex={info !== false && 100} onClick={()=>setInfo(false)} className={`${block}__container__close`}>
                         <MdClose/>
                     </button>
                     {
@@ -41,7 +41,7 @@ function InfoModal(props){
                     }
                 </div>
             </div>
-            : <></>
+            
         }</>
     )
 }

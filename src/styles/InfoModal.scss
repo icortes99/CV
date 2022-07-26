@@ -9,8 +9,19 @@
     width: 100%;
     height: 100vh;
     z-index: 900;
+    transition: background 1000ms;
+
+    &--hidden{
+        background-color: rgba($color: #000000, $alpha: 0);
+        transition: background 1000ms;
+
+        .infomodal__container{
+            transform: scaleY(0);
+        }
+    }
 
     &__container{
+        opacity: 1;
         position: fixed;
         top: calc(30%);
         left: calc(50% - 10.5rem);
@@ -24,6 +35,8 @@
         flex-direction: column;
         justify-content: flex-start;
         text-align: start;
+        transform: scale(1);
+        transition: all 350ms;
 
         &__close{
             cursor: pointer;
@@ -38,7 +51,7 @@
             transition: all 300ms;
             border-radius: .3rem;
             
-            &:hover{
+            &:hover, &:focus{
                 background-color: rgb(221, 0, 0);
                 color: white;
             }
