@@ -10,7 +10,7 @@ function InfoModal(props){
             
             <div className={info !== false ? `${block}` : `${block}--hidden`}>
                 <div className={`${block}__container`}>
-                    <button tabIndex={info !== false && 100} onClick={()=>setInfo(false)} className={`${block}__container__close`}>
+                    <button tabIndex={info !== false ? 100 : undefined} onClick={()=>setInfo(false)} className={`${block}__container__close`}>
                         <MdClose/>
                     </button>
                     {
