@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={`${block}`}>
       <header>
-        <Attendee/>
+        {/*<Attendee/>*/}
       </header>
       
       <main>
