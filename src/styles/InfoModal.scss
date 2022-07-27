@@ -50,10 +50,42 @@
             display: flex;
             transition: all 300ms;
             border-radius: .3rem;
+            width: 1rem;
+
+            &--closed{
+                position: fixed;
+                width: 1rem;
+                right: .6rem;
+                top: .6rem;
+                transition: all 350ms;
+            }
+
+            &--hover{
+                position: fixed;
+                width: 1rem;
+                right: .4rem;
+                top: .4rem;
+                opacity: 0;
+                transition: all 350ms;
+            }
             
             &:hover, &:focus{
-                background-color: rgb(221, 0, 0);
-                color: white;
+                .infomodal{
+                    &__container__close{
+                        &--closed{
+                            opacity: 0;
+                            transition: all 350ms;
+                        }
+            
+                        &--hover{
+                            background-color: rgb(221, 0, 0);
+                            padding: .2rem;
+                            border-radius: .2rem;
+                            opacity: 1;
+                            transition: all 350ms;
+                        }
+                    }
+                }
             }
         }
 

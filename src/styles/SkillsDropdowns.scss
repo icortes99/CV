@@ -95,6 +95,14 @@
         text-decoration: none;
     }
 
+    &__icon{
+        width: 1rem;
+    }
+
+    &__arrow{
+        width: 0.7rem;
+    }
+
     &:hover, &:focus{
         background-color: #727272;
     }

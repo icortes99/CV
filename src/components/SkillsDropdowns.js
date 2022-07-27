@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { useTransition, animated } from '@react-spring/web'
-import { IoIosArrowForward } from 'react-icons/io'
-import { BiArrowBack } from 'react-icons/bi'
-import { GiEyeTarget } from 'react-icons/gi' //quality skills
-import { IoMdPeople } from 'react-icons/io' //soft skills
-import { GoBeaker } from 'react-icons/go' //technical skill
+import ArrowWhite from '../assets/arrowW.png'
+import Back from '../assets/back.png'
+import Soft from '../assets/people.png'
+import Technical from '../assets/technical.png'
+import Quality from '../assets/quality.png'
 import '../styles/SkillsDropdowns.scss'
 
 function SkillsDropdowns(props){
@@ -35,9 +35,13 @@ function SkillsDropdowns(props){
 
         return(
             <button className={`${child}`} onClick={()=> goMenu && setActive(goMenu)}>
-                <span>{icon}</span>
+                <span>{
+                    <img src={icon} alt='icon' className={`${child}__icon`}/>
+                }</span>
                 {children}
-                <span>{arrow}</span>
+                <span>{ arrow &&
+                    <img src={arrow} alt='arrow' className={`${child}__arrow`}/>
+                }</span>
             </button>
         )
     }
@@ -318,19 +322,19 @@ function SkillsDropdowns(props){
                             unmountOnExit>
                                 <div>
                                     <DropdownItem
-                                    icon={<IoMdPeople/>}>
+                                    icon={Soft}>
                                         <p>Assertive communication</p>
                                     </DropdownItem>
                                     <DropdownItem
-                                    icon={<IoMdPeople/>}>
+                                    icon={Soft}>
                                         <p>Discipline</p>
                                     </DropdownItem>
                                     <DropdownItem
-                                    icon={<IoMdPeople/>}>
+                                    icon={Soft}>
                                         <p>Goal-based</p>
                                     </DropdownItem>
                                     <DropdownItem
-                                    icon={<IoMdPeople/>}>
+                                    icon={Soft}>
                                         <p>Very curious</p>
                                     </DropdownItem>
                                 </div>
@@ -347,32 +351,32 @@ function SkillsDropdowns(props){
                                 classNames={`${block}__css-container`}>
                                     <div className={`${block}__container`}>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}
-                                        arrow={<IoIosArrowForward/>}
+                                        icon={Technical}
+                                        arrow={ArrowWhite}
                                         goMenu='web'>
                                             <p>Web dev</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}
-                                        arrow={<IoIosArrowForward/>}
+                                        icon={Technical}
+                                        arrow={ArrowWhite}
                                         goMenu='software'>
                                             <p>Software</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}
-                                        arrow={<IoIosArrowForward/>}
+                                        icon={Technical}
+                                        arrow={ArrowWhite}
                                         goMenu='portfolio'>
                                             <p>Portfolio</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}
-                                        arrow={<IoIosArrowForward/>}
+                                        icon={Technical}
+                                        arrow={ArrowWhite}
                                         goMenu='3d'>
                                             <p>3D animation</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}
-                                        arrow={<IoIosArrowForward/>}
+                                        icon={Technical}
+                                        arrow={ArrowWhite}
                                         goMenu='adobe'>
                                             <p>Adobe suite</p>
                                         </DropdownItem>
@@ -387,36 +391,36 @@ function SkillsDropdowns(props){
                                 classNames={`${block}__css-container--secondary`}>
                                     <div className={`${block}__container`}>
                                         <DropdownItem
-                                        icon={<BiArrowBack/>}
+                                        icon={Back}
                                         goMenu='main'>
                                             <p>Back</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>React.js</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Node.js</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Express.js</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Sass (CSS, BEM convention)</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Middleware</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>JasonWebToken</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Bcrypt</p>
                                         </DropdownItem>
                                     </div>
@@ -430,28 +434,28 @@ function SkillsDropdowns(props){
                                 classNames={`${block}__css-container--secondary`}>
                                     <div className={`${block}__container`}>
                                         <DropdownItem
-                                        icon={<BiArrowBack/>}
+                                        icon={Back}
                                         goMenu='main'>
                                             <p>Back</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>SQL and No SQL Databases</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Git</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Object oriented programming</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Data structures</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Design patterns</p>
                                         </DropdownItem>
                                     </div>
@@ -465,12 +469,12 @@ function SkillsDropdowns(props){
                                 classNames={`${block}__css-container--secondary`}>
                                     <div className={`${block}__container`}>
                                         <DropdownItem
-                                        icon={<BiArrowBack/>}
+                                        icon={Back}
                                         goMenu='main'>
                                             <p>Back</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <a href='https://client-third-project.herokuapp.com/'>
                                                 Alchemy Bank
                                             </a>
@@ -486,28 +490,28 @@ function SkillsDropdowns(props){
                                 classNames={`${block}__css-container--secondary`}>
                                     <div className={`${block}__container`}>
                                         <DropdownItem
-                                        icon={<BiArrowBack/>}
+                                        icon={Back}
                                         goMenu='main'>
                                             <p>Back</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Rigging</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>3D modeling</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Textures</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Render</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Animation</p>
                                         </DropdownItem>
                                     </div>
@@ -521,20 +525,20 @@ function SkillsDropdowns(props){
                                 classNames={`${block}__css-container--secondary`}>
                                     <div className={`${block}__container`}>
                                         <DropdownItem
-                                        icon={<BiArrowBack/>}
+                                        icon={Back}
                                         goMenu='main'>
                                             <p>Back</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Photoshop</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>Illustrator</p>
                                         </DropdownItem>
                                         <DropdownItem
-                                        icon={<GoBeaker/>}>
+                                        icon={Technical}>
                                             <p>After Effects</p>
                                         </DropdownItem>
                                     </div>
@@ -550,19 +554,19 @@ function SkillsDropdowns(props){
                                     onEnter={calcHeight}>
                                         <div>
                                             <DropdownItem
-                                            icon={<GiEyeTarget/>}>
+                                            icon={Quality}>
                                                 <p>Constructive feedback</p>
                                             </DropdownItem>
                                             <DropdownItem
-                                            icon={<GiEyeTarget/>}>
+                                            icon={Quality}>
                                                 <p>Facts-based</p>
                                             </DropdownItem>
                                             <DropdownItem
-                                            icon={<GiEyeTarget/>}>
+                                            icon={Quality}>
                                                 <p>Mentorship</p>
                                             </DropdownItem>
                                             <DropdownItem
-                                            icon={<GiEyeTarget/>}>
+                                            icon={Quality}>
                                                 <p>Idea transmit</p>
                                             </DropdownItem>
                                         </div>

@@ -1,4 +1,5 @@
-import {MdClose} from 'react-icons/md'
+import Exit from '../assets/exit.png'
+import ExitBlack from '../assets/exitBlack.png'
 import '../styles/InfoModal.scss'
 
 function InfoModal(props){
@@ -11,7 +12,8 @@ function InfoModal(props){
             <div className={info !== false ? `${block}` : `${block}--hidden`}>
                 <div className={`${block}__container`}>
                     <button tabIndex={info !== false ? 100 : undefined} onClick={()=>setInfo(false)} className={`${block}__container__close`}>
-                        <MdClose/>
+                        <img src={ExitBlack} alt='exit icon' className={`${block}__container__close--closed`}/>
+                        <img src={Exit} alt='exit icon' className={`${block}__container__close--hover`}/>
                     </button>
                     {
                         type === 0 ? <div>

@@ -37,10 +37,12 @@
         transition: color 350ms;
 
         &__arrow{
+            width: .7rem;
             transition: transform 350ms;
             margin-left: .2rem;
 
             &--opened{
+                width: .7rem;
                 margin-left: .2rem;
                 transform: rotate(90deg);
                 transition: transform 350ms;

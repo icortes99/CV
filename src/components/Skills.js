@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { IoIosArrowForward } from 'react-icons/io'
+import ArrowWhite from '../assets/arrowW.png'
+import ArrowBlue from '../assets/arrowB.png'
 import '../styles/Skills.scss'
 import SkillsDropdowns from './SkillsDropdowns'
 
@@ -22,8 +23,7 @@ function Skills(){
                 <div>
                     <button className={`${block}__button`} onClick={()=>changeDropd(0)}>
                         Soft skills
-                        <IoIosArrowForward
-                        className={dropd === 0 ? `${block}__button__arrow--opened` : `${block}__button__arrow`}/>
+                        <img src={ArrowWhite} alt='arrow icon' className={dropd === 0 ? `${block}__button__arrow--opened` : `${block}__button__arrow`}/>
                     </button>
                     {dropd === 0 && <SkillsDropdowns category={0}/>}
                 </div>
@@ -31,8 +31,7 @@ function Skills(){
                 <div>
                     <button className={`${block}__button`} onClick={()=>changeDropd(1)}>
                         Technical skills
-                        <IoIosArrowForward
-                        className={dropd === 1 ? `${block}__button__arrow--opened` : `${block}__button__arrow`}/>
+                        <img src={ArrowWhite} alt='arrow icon' className={dropd === 1 ? `${block}__button__arrow--opened` : `${block}__button__arrow`}/>
                     </button>
                     {dropd === 1 && <SkillsDropdowns category={1}/>}
                 </div>
@@ -40,8 +39,7 @@ function Skills(){
                 <div>
                     <button className={`${block}__button`} onClick={()=>changeDropd(2)}>
                         QA skills
-                        <IoIosArrowForward
-                        className={dropd === 2 ? `${block}__button__arrow--opened` : `${block}__button__arrow`}/>
+                        <img src={ArrowWhite} alt='arrow icon' className={dropd === 2 ? `${block}__button__arrow--opened` : `${block}__button__arrow`}/>
                     </button>
                     {dropd === 2 && <SkillsDropdowns category={2}/>}
                 </div>

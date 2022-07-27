@@ -26,12 +26,16 @@
     }
 
     &__arrow{
-        font-size: 1.3rem;
+        width: 1.1rem;
         position: absolute;
         left: 50%;
         bottom: .15rem;
         transform: rotate(90deg);
         transition: all 500ms;
+
+        &__hover{
+            opacity: 0;
+        }
     }
 
     &:hover, &:focus{
@@ -45,7 +49,11 @@
             }
 
             &__arrow{
-                color: $skyblue;
+                opacity: 0;
+
+                &__hover{
+                    opacity: 1;
+                }
             }
         }
 

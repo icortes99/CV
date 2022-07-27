@@ -1,8 +1,8 @@
 import imageProfile from '../assets/img.jpeg'
-import {MdShareLocation} from 'react-icons/md'
-import {CgMail} from 'react-icons/cg'
-import {FiLinkedin} from 'react-icons/fi'
-import {MdOutlineAddIcCall} from 'react-icons/md'
+import Map from '../assets/location.png'
+import Email from '../assets/email.png'
+import LinkedIn from '../assets/linkedin.png'
+import Call from '../assets/call.png'
 import '../styles/Profile.scss'
 
 function Profile(){
@@ -20,25 +20,25 @@ function Profile(){
                     </li>
                     <li>
                         <div className={`${block}__list__container`}>
-                            <MdShareLocation className={`${block}__list__icon`}/>
+                            <img src={Map} alt='location map icon' className={`${block}__list__icon`}/>
                             <p>Costa Rica</p>
                         </div>
                     </li>
                     <li>
                         <a href='mailto:cortes.ivan353@gmail.com' className={`${block}__list__container click`}>
-                            <CgMail className={`${block}__list__icon`}/>
-                            <p>cortes.ivan353@gmail</p>
+                        <img src={Email} alt='email icon' className={`${block}__list__icon`}/>
+                            <p>cortes.ivan353@gmail.com</p>
                         </a>
                     </li>
                     <li>
                         <a target='__blank' href='https://www.linkedin.com/in/iv%C3%A1n-cort%C3%A9s-90487218a' className={`${block}__list__container click`}>
-                            <FiLinkedin className={`${block}__list__icon`}/>
+                        <img src={LinkedIn} alt='inked-in icon' className={`${block}__list__icon`}/>
                             <p>Iván Cortés</p>
                         </a>
                     </li>
                     <li>
                         <a href='tel:+50672768391' className={`${block}__list__container click`}>
-                            <MdOutlineAddIcCall className={`${block}__list__icon`}/>
+                        <img src={Call} alt='call icon' className={`${block}__list__icon`}/>
                             <p>+506 72768391</p>
                         </a>
                     </li>
